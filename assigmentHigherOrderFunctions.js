@@ -9,8 +9,7 @@ let mixin = [1, 2, 3, "E", 4, "l", "z", "e", "r", 5, "o"];
 
 let word = mixin
     .map(function (element) {
-        element = typeof element === "string" ? element : "";
-        return element;
+        return typeof element === "string" ? element : "";
     })
     .reduce(function (acc, current) {
         return `${acc}${current}`
@@ -43,8 +42,7 @@ console.log("----------------------");
 let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
 
 let revesedNum = numsAndStrings.map(function (ele) {
-    ele = typeof ele === "number" ? -ele : "";
-    return ele;
+    return typeof ele === "number" ? -ele : "";
 }).filter(ele => ele);
 
 console.log(revesedNum); // [-1, -10, 10, 20, -5, -3]
