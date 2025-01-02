@@ -1,25 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Higher Order Functions</title>
 </head>
+<style>
+    body {
+        background-color: khaki;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 50px;
+        color: red;
+    }
+
+    li {
+        font-weight: bold;
+        font-size: 30px;
+        color: rgb(63, 20, 220);
+    }
+</style>
 
 <body>
+    <h1 style="text-align: center;">Higher Order Functions</h1>
+    <br>
+    <hr>
 
-    <ul>
+    <h3 style="text-align: center;">التطبيق علي الدرس</h3>
+    <hr>
+
+    <ul style="direction: ltr;">
         <li class="active">One</li>
         <li>Two</li>
         <li>Three</li>
     </ul>
-    <div class="content">
+    <div style="direction: ltr;" class="content">
         <div>Div One</div>
         <div>Div Two</div>
         <div>Div Three</div>
     </div>
+    <hr>
+    <h2 style="text-align: center;">حل التكليفات</h2>
+    <hr>
 
+    <h3 style="text-align: center; font-weight: bold;">في اخر الصفحة في تحدي اقرأ هذا التحدي وشروطه</h3>
+    <hr>
+
+    <h1 style="text-align: center;">التكليف 01</h1>
+    <ul>
+        <li>لديك متغير بإسم mix يحتوي على Letters And Numbers</li>
+        <li>قم بإنشاء Array جديدة بواسطة ال Map</li>
+        <li>يجب عليك إستثناء الأرقام نهائيا من النتيجة</li>
+        <li>يجب عليك عمل Concatenate لل Letters لتخرج بالنتيجة</li>
+        <li>يجب إستعمال ال Map + Reduce مع ما تعلمته لتخرج بالناتج المطلوب</li>
+        <li>ممنوع إستخدام ال Join أو Filter</li>
+    </ul>
+
+    <br>
+    <hr>
+
+    <h1 style="text-align: center;">التكليف 02</h1>
+    <ul>
+        <li>لديك متغير بإسم myString يحتوي على Letters منها المكرر ومنها العادي</li>
+        <li>قم بإنشاء Array جديدة بواسطة ال Filter</li>
+        <li>يجب عليك إستثناء ال Letters المكررة نهائيا من النتيجة</li>
+        <li>يجب عليك عمل Concatenate لل Letters لتخرج بالنتيجة</li>
+    </ul>
+    <br>
+    <hr>
+
+    <h1 style="text-align: center;">التكليف 03</h1>
+    <ul>
+        <li>لديك متغير بإسم myArray يحتوي على Array وبداخلها Array أخرى</li>
+        <li>قم بإنشاء Array جديدة بواسطة ال Reduce</li>
+        <li>يجب عليك عمل Flatten لل Array لترجع ب Array واحدة</li>
+        <li>يجب عليك عمل Concatenate لل Letters لتخرج بالنتيجة</li>
+        <li>ممنوع إستخدام
+            Array.flat()
+            نهائيا</li>
+    </ul>
+
+    <br>
+    <hr>
+
+    <h1 style="text-align: center;">التكليف 04</h1>
+    <ul>
+        <li>لديك متغير بإسم numsAndStrings يحتوي على Letters And Numbers</li>
+        <li>قم بإنشاء Array جديدة بواسطة ال Filter + Map</li>
+        <li>يجب عليك إستثناء ال Letters من النتيجة</li>
+        <li>يجب عليك عكس الأرقام بمعنى الموجب يكون سالب والسالب يكون موجب</li>
+        <li>يجب عليك إستخدام ال Map + Filter + ما تريد</li>
+    </ul>
+
+    <br>
+    <hr>
+
+    <h1 style="text-align: center;">التكليف 05</h1>
+    <ul>
+        <li>لديك متغير بإسم nums يحتوي على مجموعة أرقام زوجية وفردية</li>
+        <li>قم بإيجاد النتيجة النهائية المطلوبة بواسطة إستخدام ال Reduce فقط</li>
+        <li>يجب عليك تعيين ال Initial Value لل Reduce لرقم 1</li>
+        <li>إذا كانت قيمة ال Current Element في ال Reduce رقم فردي قم بجمع ال Accumulator مع ال Current Element</li>
+        <li>إذا كانت قيمة ال Current Element في ال Reduce رقم زوجي قم بضرب ال Accumulator مع ال Current Element</li>
+    </ul>
+
+    <br>
+    <hr>
+
+    <h1 style="text-align: center;">التكليف 06</h1>
+    <ul>
+        <li>قم بكتابة Code فيه ما تعلمته لتخرج النتيجة الموجودة في المثال</li>
+        <li>يمنع كتابة اي أرقام نهائيا في اي مكان في الحل</li>
+    </ul>
+    <br>
+    <hr>
+
+    <h1 style="text-align: center;">Higher Order Functions Challenges</h1>
+    <p style="direction: ltr; font-size:20px; font-weight: 900; line-height: 1.5;">
+        You Can Use <br>
+        - , <br>
+        - _ <br>
+        - Space <br>
+        - True => 1 => One Time Only In The Code <br>
+        <br>
+        You Cannot Use
+        <br>
+        - Numbers<br>
+        - Letters
+        <br>
+        - You Must Use [Filter + Map + Reduce + Your Knowledge]<br>
+        - Order Is Not Important<br>
+        - All In One Chain<br>
+    </p>
     <script src="HigherOrderFunctions.js"></script>
     <script src="assigmentHigherOrderFunctions.js"></script>
 
