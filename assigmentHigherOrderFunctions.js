@@ -53,3 +53,10 @@ console.log("----------------------");
 console.log("-- التكليف 05 --");
 console.log("----------------------");
 
+let numbs = [2, 12, 11, 5, 10, 1, 99];
+
+let finalNum = numbs.reduce(function (accumulator, current) {
+    let ele = current % 2 === 0 ? accumulator * current : accumulator + current;
+    return ele;
+}, 1);
+console.log(finalNum); // 500
