@@ -163,11 +163,9 @@ console.log(check);
 
 let removeChars = ["E", "@", "@", "L", "Z", "@", "@", "E", "R", "@", "O"];
 
-let finalString = removeChars
-  .filter(function (ele) {
+let finalString = removeChars.filter(function (ele) {
     return ele !== "@";
-  })
-  .reduce(function (acc, current) {
+  }).reduce(function (acc, current) {
     return `${acc}${current}`;
   });
 
@@ -187,7 +185,7 @@ console.log("-".repeat(20));
   - Array - The Current Array
 
   Note
-  - Doesnt Return Anything [Undefined]
+  - Doesn't Return Anything [Undefined]
   - Break Will Not Break The Loop
 */
 
