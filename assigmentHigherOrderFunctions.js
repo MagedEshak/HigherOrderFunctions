@@ -37,7 +37,7 @@ console.log("----------------------");
 console.log("-- My Solution without use Reduce fun --");
 
 let myArray = ["E", "l", "z", ["e", "r"], "o"];
-let flattenArray = myArray.join("").split("").map(ele => ele !== "," ? ele : "").join("");
+let flattenArray = myArray.join("").split(",").map(ele => ele !== "," ? ele : "").join("");
 console.log(flattenArray); // Elzero
 
 // My Solution with use Reduce fun
@@ -95,8 +95,26 @@ console.log("----------------------");
 
 */
 
+// My Solution 
+console.log("-- My Solution --");
+
 let myStrin = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
 
-let solution = myStrin;
+let solution = myStrin.split(",")
+    .filter(ele => isNaN(parseInt(ele)))
+    .map(function (ele) {
+        if (ele === "Z") {
+            return "";
+        } else {
+            return ele;
+        }
+    })
+    .reduce(function (acc, current) {
+        if (current === "EE") {
+            return acc + "E";
+        } else {
+            return `${acc}${current}`;
+        }
+    },"");
 
-console.log(solution); // Elzero Web School
+console.log(solution); // Elzero_Web_School
