@@ -16,9 +16,7 @@ let word = mixin
         return `${acc}${current}`
     });
 
-    console.log(word);
-    // Elzero
-
+    console.log(word); // Elzero
 
 console.log("----------------------");
 console.log("-- ال تكليف 02 --");
@@ -29,8 +27,8 @@ let myString = "EElllzzzzzzzeroo";
 let myStr = myString.split("").filter(function (char, index, ele) {
     return ele.indexOf(char) === index;
 }).join("");
-console.log(myStr);
-// Elzero
+
+console.log(myStr); // Elzero
 
 console.log("----------------------");
 console.log("-- التكليف 03 --");
@@ -40,5 +38,18 @@ console.log("----------------------");
 
 console.log("----------------------");
 console.log("-- التكليف 04 --");
+console.log("----------------------");
+
+let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
+
+let revesedNum = numsAndStrings.map(function (ele) {
+    ele = typeof ele === "number" ? -ele : "";
+    return ele;
+}).filter(ele => ele);
+
+console.log(revesedNum); // [-1, -10, 10, 20, -5, -3]
+
+console.log("----------------------");
+console.log("-- التكليف 05 --");
 console.log("----------------------");
 
